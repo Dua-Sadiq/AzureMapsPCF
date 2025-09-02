@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+  <control namespace="AzureMapsPCF" constructor="AzureMapsPCF" version="0.0.2" display-name-key="Azure Maps PCF" description-key="Fill Address Form with Autosuggest - Azure Maps Web SDK using REST" control-type="standard" api-version="1.3.18">
+    <property name="name" display-name-key="name" description-key="name" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="addressLine1" display-name-key="addressLine1" description-key="addressLine1" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="city" display-name-key="City" description-key="City" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="state" display-name-key="State/Region" description-key="State/Region" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="zipcode" display-name-key="Zip Code" description-key="Zip Code" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="country" display-name-key="Country" description-key="Country" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <property name="actionName" display-name-key="actionName" description-key="actionName" of-type="SingleLine.Text" usage="input" required="true"/>
+    <property name="minlength" display-name-key="minlength" description-key="minlength" of-type="SingleLine.Text" usage="input" required="true"/>
+    <property name="subKey" display-name-key="subKey" description-key="Subscription Key" of-type="SingleLine.Text" usage="input" required="true"/>
+    <resources>
+      <code path="bundle.js" order="1"/>
+      <css path="css/AddressTypeAhead.css" order="1"/>
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true"/>
+    </feature-usage>
+    <built-by name="pac" version="1.45.2"/>
+  </control>
+</manifest>

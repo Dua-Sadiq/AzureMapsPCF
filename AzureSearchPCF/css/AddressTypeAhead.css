@@ -1,0 +1,27 @@
+/* Basic styles for AddressTypeAhead PCF control */
+#search_field {
+  width: 300px;
+  border: 1px solid #888;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0 0 4px 4px;
+  z-index: 1000;
+}
+
+.ui-menu-item-wrapper {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.ui-menu-item-wrapper.ui-state-active {
+  background: #e6f0fa;
+  color: #222;
+} 
